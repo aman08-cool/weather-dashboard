@@ -1,0 +1,157 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background: #4e54c8;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.col-4 {
+  font-weight: bold;
+}
+
+#search-btn,
+#collapse-search-history {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-btn:hover,
+#collapse-search-history:hover {
+  background: #3a3f99;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.temperature-toggle {
+  cursor: pointer;
+  border: 1px solid #4e54c8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #4e54c8;
+  color: white;
+  text-align: center;
+  float: right;
+  transition: background-color 0.3s;
+}
+
+.temperature-toggle:hover {
+  background: #3a3f99;
+}
+
+#delete-history {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#delete-history:hover {
+  background-color: #f1b0b7;
+}
+
+#uv-index {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* UV Index colors */
+.uv-low {
+  background-color: #3ea72d;
+  color: white;
+}
+.uv-moderate {
+  background-color: #fff300;
+  color: black;
+}
+.uv-high {
+  background-color: #f18b00;
+  color: white;
+}
+.uv-very-high {
+  background-color: #e53210;
+  color: white;
+}
+.uv-extreme {
+  background-color: #b567a4;
+  color: white;
+}
+
+footer {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+}
